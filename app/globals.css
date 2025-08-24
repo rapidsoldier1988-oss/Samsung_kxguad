@@ -1,0 +1,130 @@
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --accent: #0070f3;
+  --muted: #9aa4b2;
+  --glass: rgba(255, 255, 255, 0.04);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, Segoe UI, Roboto, -apple-system, 'Helvetica Neue', Arial;
+}
+
+body {
+  background: linear-gradient(180deg, #071021 0%, #0b1624 100%);
+  color: #e6eef6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  border-radius: 12px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+p.lead {
+  margin: 0 0 18px;
+  color: var(--muted);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  background: var(--glass);
+  color: inherit;
+  font-size: 16px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+button {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 0;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.small {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 12px;
+}
+
+.admin-link {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  color: var(--muted);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.note {
+  font-size: 12px;
+  color: #ffdf7e;
+  margin-top: 12px;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.success {
+  color: #51cf66;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
